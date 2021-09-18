@@ -1,29 +1,234 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>SMART Grocery List</title>
     <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- css and bootstrap 4 styles -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- custom js, jquery and bootstrap jquery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/app.js"></script>
   </head>
 
   <body>
-    <h1>Hello, world!</h1>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+      <a class="navbar-brand logo" href="#">GROCEY</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Grocery </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- main jumbotron -->
+    <section>
+      <div class="container">
+        <div class="jumbotron mt-lg-5 main-bg">
+          <h1 class="display-3">What is Grocey?</h1>
+          <p class="lead mt-4">
+            With rising standards of living all accross the world, food wastage
+            in households has reached an all time high due to excess buying and
+            food expiration. SMART Grocery List aims to help consumers purchase
+            just enough groceries to reduce wastage and still prepare enought
+            hearty meals for the family.
+          </p>
+          <a class="btn btn-success btn-lg mt-2" href="#" role="button"
+            >Learn more</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- add members and info and generate grocery list -->
 
-    
+    <section>
+      <div class="container add-members mb-5">
+        <!-- description -->
+        <div class="row justify-content-center">
+          <h2 class="display-4 text-center col-xs-12 col-md-10">
+            Find out how much food you need to buy each week!
+          </h2>
+        </div>
+        <div class="row">
+          <h4 class="display-5 col-12 col-lg-6 text-center">
+            How many meals do you cook at home?
+          </h4>
+          <div class="input-group mb-3 col-4 col-lg-2">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01"
+                >Breakfast</label
+              >
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+              <option selected>Choose...</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+          </div>
+          <div class="input-group mb-3 col-4 col-lg-2">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01"
+                >Lunch</label
+              >
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+              <option selected>Choose...</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+          </div>
+          <div class="input-group mb-3 col-4 col-lg-2">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01"
+                >Dinner</label
+              >
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+              <option selected>Choose...</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card w-100 mt-5 mb-3">
+            <div class="card-body">
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Name"
+                  aria-label="Name"
+                />
+              </div>
+              <form class="form person">
+                <div class="form-group row mb-0">
+                  <div class="col-md-2 col-4 mb-3">
+                    <label for="" class="mr-2 sr-only">Age</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id=""
+                      placeholder="Age"
+                    />
+                  </div>
+                  <div class="col-md-2 col-4 mb-3">
+                    <label for="" class="mr-2 sr-only">Height</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id=""
+                      placeholder="Height (cm)"
+                    />
+                  </div>
+                  <div class="col-md-2 col-4 mb-3">
+                    <label for="" class="mr-2 sr-only">Weight</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id=""
+                      placeholder="Weight (kg)"
+                    />
+                  </div>
+                  <div class="col-md-3 col-12 mb-3">
+                    <select class="form-control form-control">
+                      <option value="">-Select an option-</option>
+                      <option value="">Don't Exercise</option>
+                      <option value="">Exercise 1 - 2 times a week</option>
+                      <option value="">Exercise 3 - 5 times a week</option>
+                      <option value="">Exercise 6 - 7 times a week</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3 col-12 mb-3">
+                    <label for="" class="mr-2 sr-only">Diet</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id=""
+                      placeholder="Dietary Restrictions"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <button class="btn btn-outline-success col-12" type="submit">
+            Add New Member
+          </button>
+        </div>
+        <div class="row mt-4">
+          <button class="btn btn-success col-12 col-lg-4" type="submit">
+            Generate SMART Grocery List
+          </button>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
-
-

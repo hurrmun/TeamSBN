@@ -2,4 +2,36 @@
 
 body {
   font-family: "Oxygen", sans-serif;
+  background-color: #defade;
+  padding-top: 40px;
+  /* background-image: url(https://images.unsplash.com/photo-1488459716781-31db52582fe9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80); */
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
 }
+
+.logo {
+  font-weight: 700;
+}
+
+.main-bg {
+  /* background-image: url(https://images.unsplash.com/photo-1495195134817-aeb325a55b65?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1700&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+  background-color: #3a5f3a;
+  color: #ffffff;
+}
+
+.main-bg h1 {
+  font-weight: 700;
+}
+
+.add-members h2 {
+  font-weight: 700;
+  margin: 1em;
+}
+
+/* .person input {
+  width: 10%;
+} */
