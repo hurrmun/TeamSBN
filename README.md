@@ -32,4 +32,10 @@ Features that should be implemented:
 - tracking of past eating habits
 - From the features, we will estimate how much the consumer will eat
 
+# More on Calories:
+- While this application that we are proposing is not a fitness application, we aim to use calories to estimate the amount of food that the user
+should be eating for the meal, based on the various factors mentioned above
+- Calories are units of energy that are contributed by one of three macronutrients, which are fats, carbohydrates and protein
+- As such, the amount of food will be estimated through the suggested calorie intake
+
 # TeamSBN
