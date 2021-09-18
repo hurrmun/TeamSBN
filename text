@@ -7,3 +7,12 @@ frequency of dining in or dining out. The application will then come up with a s
 based on these eating habits. The consumers are then able to have a more accurate estimation of the amount of food that they should be buying. 
 
 Should there still be leftovers, the application will then suggest meals that can be made from the leftovers. 
+
+Features that should be implemented: 1) number of consumers 2) frequency of cooking at home 3) age and size relating to diet (recommended dietary intake) 
+4) frequency of exercise (lifestyle) 5) ease of logging in (link to Google?)
+
+Features that are optional / for the future: 1) progress 2) intensity of workout 3) tracking of past eating habits
+
+From the features, we will estimate how much the consumer will eat
+
+Implementation of the application 
