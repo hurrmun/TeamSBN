@@ -4,3 +4,24 @@ Hello World!
 -----------------
 
 
+Our intention is to create an application to address the issue of food wastage.
+
+We intend to reduce food wastage by taking reducing the amount of food that is bought but not consumed.
+
+In order to address this, we will be developing an app which takes into account the number of people are consuming the meal,
+frequency of dining in or dining out. The application will then come up with a suggested amount of food that needs to be bought on a weekly basis, 
+based on these eating habits. The consumers are then able to have a more accurate estimation of the amount of food that they should be buying. 
+
+Should there still be leftovers, the application will then suggest meals that can be made from the leftovers. 
+
+Features that should be implemented: 1) number of consumers 2) frequency of cooking at home 3) age and size relating to diet (recommended dietary intake) 
+4) frequency of exercise (lifestyle) 5) ease of logging in (link to Google?) 6) Dietary preferences, can give options and for each category, there are options
+for the user to swap, eg swap chicked with beef, so long as the caloric amount is, but there are some assumptions will be made
+
+Features that are optional / for the future: 1) progress 2) intensity of workout 3) tracking of past eating habits
+
+From the features, we will estimate how much the consumer will eat
+
+Implementation of the application 
+
+Make the app web-based first, with no requirement to log in or link to any social networking account yet
