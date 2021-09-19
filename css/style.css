@@ -57,3 +57,7 @@ footer h2 {
   font-weight: 700;
   margin-bottom: 20px;
 }
+
+footer img {
+  height: 200px;
+}
