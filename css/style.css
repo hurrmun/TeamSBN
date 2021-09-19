@@ -12,6 +12,12 @@ body {
 
 .logo {
   font-weight: 700;
+  font-size: 30px;
+}
+
+.logo img {
+  width: 40px;
+  margin-bottom: 7px;
 }
 
 .main-bg {
