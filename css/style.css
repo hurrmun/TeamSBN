@@ -35,3 +35,25 @@ body {
 /* .person input {
   width: 10%;
 } */
+
+footer .container-fluid {
+  height: 200px;
+  background-color: #3a5f3a;
+}
+
+footer h2 {
+  font-weight: 700;
+  font-size: 60px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.groceryList .weight {
+  right: 0;
+}
+
+.groceryList h3 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}

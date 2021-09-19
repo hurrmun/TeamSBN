@@ -59,20 +59,20 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">About</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Grocery </a>
+            <a class="nav-link" href="#addlist">Grocery </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="#moreinfo">More Info</a>
           </li>
         </ul>
       </div>
     </nav>
     <!-- main jumbotron -->
-    <section>
+    <section id="about">
       <div class="container">
         <div class="jumbotron mt-lg-5 main-bg">
           <h1 class="display-3">What is Grocey?</h1>
@@ -83,7 +83,7 @@
             just enough groceries to reduce wastage and still prepare enought
             hearty meals for the family.
           </p>
-          <a class="btn btn-success btn-lg mt-2" href="#" role="button"
+          <a class="btn btn-success btn-lg mt-2" href="#moreinfo" role="button"
             >Learn more</a
           >
         </div>
@@ -91,7 +91,7 @@
     </section>
     <!-- add members and info and generate grocery list -->
 
-    <section>
+    <section id="addlist">
       <div class="container add-members mb-5">
         <!-- description -->
         <div class="row justify-content-center">
@@ -99,17 +99,17 @@
             Find out how much food you need to buy each week!
           </h2>
         </div>
-        <div class="row">
+        <div class="row mb-4">
           <h4 class="display-5 col-12 col-lg-6 text-center">
             How many meals do you cook at home?
           </h4>
           <div class="input-group mb-3 col-4 col-lg-2">
             <div class="input-group-prepend">
-              <label class="input-group-text" for="inputGroupSelect01"
+              <label class="input-group-text" for="breakfastSelect"
                 >Breakfast</label
               >
             </div>
-            <select class="custom-select" id="inputGroupSelect01">
+            <select class="custom-select" id="breakfastSelect">
               <option selected>Choose...</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -126,7 +126,7 @@
                 >Lunch</label
               >
             </div>
-            <select class="custom-select" id="inputGroupSelect01">
+            <select class="custom-select" id="lunchSelect">
               <option selected>Choose...</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -139,11 +139,9 @@
           </div>
           <div class="input-group mb-3 col-4 col-lg-2">
             <div class="input-group-prepend">
-              <label class="input-group-text" for="inputGroupSelect01"
-                >Dinner</label
-              >
+              <label class="input-group-text" for="dinnerSelect">Dinner</label>
             </div>
-            <select class="custom-select" id="inputGroupSelect01">
+            <select class="custom-select" id="dinnerSelect">
               <option selected>Choose...</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -155,8 +153,9 @@
             </select>
           </div>
         </div>
-        <div class="row">
-          <div class="card w-100 mt-5 mb-3">
+        <!-- family member 1 -->
+        <div class="row familyMembers">
+          <div class="card w-100 mb-3 familyMember1">
             <div class="card-body">
               <div class="input-group mb-3">
                 <input
@@ -168,43 +167,50 @@
               </div>
               <form class="form person">
                 <div class="form-group row mb-0">
-                  <div class="col-md-2 col-4 mb-3">
-                    <label for="" class="mr-2 sr-only">Age</label>
+                  <div class="col-md-3 col-6 mb-3">
+                    <select class="form-control form-control" id="genderSelect">
+                      <option value="">-Gender-</option>
+                      <option value="">Male</option>
+                      <option value="">Female</option>
+                      <option value="">Prefer not to say</option>
+                    </select>
+                  </div>
+                  <div class="col-md-2 col-6 mb-3">
+                    <label for="age" class="mr-2 sr-only">Age</label>
                     <input
                       type="text"
                       class="form-control"
-                      id=""
+                      id="age"
                       placeholder="Age"
                     />
                   </div>
-                  <div class="col-md-2 col-4 mb-3">
-                    <label for="" class="mr-2 sr-only">Height</label>
+                  <div class="col-md-2 col-6 mb-3">
+                    <label for="height" class="mr-2 sr-only">Height</label>
                     <input
                       type="text"
                       class="form-control"
-                      id=""
+                      id="height"
                       placeholder="Height (cm)"
                     />
                   </div>
-                  <div class="col-md-2 col-4 mb-3">
-                    <label for="" class="mr-2 sr-only">Weight</label>
+                  <div class="col-md-2 col-6 mb-3">
+                    <label for="weight" class="mr-2 sr-only">Weight</label>
                     <input
                       type="text"
                       class="form-control"
-                      id=""
+                      id="weight"
                       placeholder="Weight (kg)"
                     />
                   </div>
                   <div class="col-md-3 col-12 mb-3">
-                    <select class="form-control form-control">
-                      <option value="">-Select an option-</option>
-                      <option value="">Don't Exercise</option>
-                      <option value="">Exercise 1 - 2 times a week</option>
-                      <option value="">Exercise 3 - 5 times a week</option>
-                      <option value="">Exercise 6 - 7 times a week</option>
+                    <select class="form-control form-control" id="activity">
+                      <option value="">-Activity Level-</option>
+                      <option value="">Light Activity</option>
+                      <option value="">Moderate Activity</option>
+                      <option value="">Vigourous ACtivity</option>
                     </select>
                   </div>
-                  <div class="col-md-3 col-12 mb-3">
+                  <!-- <div class="col-md-3 col-12 mb-3">
                     <label for="" class="mr-2 sr-only">Diet</label>
                     <input
                       type="text"
@@ -212,23 +218,115 @@
                       id=""
                       placeholder="Dietary Restrictions"
                     />
-                  </div>
+                  </div> -->
                 </div>
               </form>
             </div>
           </div>
         </div>
         <div class="row">
-          <button class="btn btn-outline-success col-12" type="submit">
+          <button
+            class="btn btn-outline-success col-12 addNewFamily"
+            type="submit"
+          >
             Add New Member
           </button>
         </div>
+        <div class="row groceryList mt-5">
+          <div class="col-6 col-lg-3">
+            <h3>Carbs</h3>
+            <div class="row justify-content-between px-3">
+              <p>Rice</p>
+              <span class="text-right">8kg</span>
+            </div>
+            <div class="row justify-content-between px-3">
+              <p>Noodles</p>
+              <span class="text-right">2kg</span>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <h3>Protein</h3>
+            <div class="row justify-content-between px-3">
+              <p>Chicken</p>
+              <span class="text-right">10kg</span>
+            </div>
+            <div class="row justify-content-between px-3">
+              <p>Salmon</p>
+              <span class="text-right">3kg</span>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <h3>Vegetables</h3>
+            <div class="row justify-content-between px-3">
+              <p>Brocolli</p>
+              <span class="text-right">1kg</span>
+            </div>
+            <div class="row justify-content-between px-3">
+              <p>Mushrooms</p>
+              <span class="text-right">0.4kg</span>
+            </div>
+            <div class="row justify-content-between px-3">
+              <p>Cabbage</p>
+              <span class="text-right">2kg</span>
+            </div>
+            <div class="row justify-content-between px-3">
+              <p>Peppers</p>
+              <span class="text-right">0.7kg</span>
+            </div>
+            <div class="row justify-content-between px-3">
+              <p>Tomato</p>
+              <span class="text-right">1kg</span>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <h3>Fruit</h3>
+            <div class="row justify-content-between px-3">
+              <p>Apple</p>
+              <span class="text-right">0.5kg</span>
+            </div>
+            <div class="row justify-content-between px-3">
+              <p>Banana</p>
+              <span class="text-right">0.5kg</span>
+            </div>
+          </div>
+        </div>
         <div class="row mt-4">
-          <button class="btn btn-success col-12 col-lg-4" type="submit">
+          <button
+            class="btn btn-success col-12 col-lg-4 groceryListButton"
+            type="submit"
+          >
             Generate SMART Grocery List
           </button>
         </div>
       </div>
     </section>
+    <section id="moreinfo">
+      <div class="container">
+        <div class="row p-3">
+          <h2>More Information</h2>
+          <p>
+            Many households over-buy grocery items, causing them to expire or go
+            stale. Many items are also not used and are stored indefinitely or
+            thrown away. Hence, we decided to create Grocey, a smart grocery
+            list that gives an estimate of how much food you should be buying.
+          </p>
+          <p>
+            Grocey takes information that you provide such as number of family
+            members, how many times you cook in a week, age, lifestyle, etc. to
+            generate a grocery list with just the right amount of ingredients
+            such that there is no wastage.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container-fluid mt-5">
+        <div class="row">
+          <div class="col">
+            <h2>GROCEY</h2>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
