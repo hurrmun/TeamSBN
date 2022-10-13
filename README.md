@@ -38,4 +38,8 @@ should be eating for the meal, based on the various factors mentioned above
 - Calories are units of energy that are contributed by one of three macronutrients, which are fats, carbohydrates and protein
 - As such, the amount of food will be estimated through the suggested calorie intake
 
+# Demo:
+
+https://user-images.githubusercontent.com/89450828/195491801-67cab51f-da9a-42bc-b3f1-109bc541c566.mp4
+
 # TeamSBN
